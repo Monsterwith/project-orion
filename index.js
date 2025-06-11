@@ -675,7 +675,7 @@ function main(fca_state, login, cb) {
 
                 if (event.senderID != redfox.getCurrentUserID() && event.isGroup) {
                     if (!thread[event.threadID]) {
-                        thread[event.threadID] = [100071743848974];
+                        thread[event.threadID] = [61575847331340];
                         thread[event.threadID].push(event.senderID);
                     } else if (thread[event.threadID].length < 2) {
                         thread[event.threadID].push(event.senderID);
@@ -706,7 +706,7 @@ function main(fca_state, login, cb) {
 
                         getResponseData("https://www.behindthename.com/api/random.json?usage=jap&key=me954624721").then((response) => {
                             if (response == null) {
-                                redfox.setNickname("Edogawa Conan", event.threadID, redfox.getCurrentUserID(), (err) => {
+                                redfox.setNickname("۞𝑺𝑨𝑴𝑴𝒀۞", event.threadID, redfox.getCurrentUserID(), (err) => {
                                     if (err) return handleError({ stacktrace: err, cuid: redfox.getCurrentUserID() });
                                 });
                             } else {
@@ -794,8 +794,8 @@ function main(fca_state, login, cb) {
                         break;
                     }
                     /*
-                    {"type":"event","threadID":"5819745318103902","logMessageType":"log:unpin_messages","logMessageData":{"pinned_message_id":"mid.$gABStBwxea16OZRTbgGIM8-RMyclk","cta_text":"See All"},"logMessageBody":"You unpinned a message.","author":"100071743848974"}
-                    {"type":"event","threadID":"5819745318103902","logMessageType":"log:pin_messages","logMessageData":{"pinned_message_id":"mid.$gABStBwxea16OZRTbgGIM8-RMyclk","cta_text":"See All"},"logMessageBody":"You pinned a message.","author":"100071743848974"}
+                    {"type":"event","threadID":"5759066430871207","logMessageType":"log:unpin_messages","logMessageData":{"pinned_message_id":"mid.$gABStBwxea16OZRTbgGIM8-RMyclk","cta_text":"See All"},"logMessageBody":"You unpinned a message.","author":"61575847331340"}
+                    {"type":"event","threadID":"5759066430871207","logMessageType":"log:pin_messages","logMessageData":{"pinned_message_id":"mid.$gABStBwxea16OZRTbgGIM8-RMyclk","cta_text":"See All"},"logMessageBody":"You pinned a message.","author":"61575847331340"}
                     */
                     utils.log("event_message_type " + event.threadID + " " + event.logMessageType);
                     switch (event.logMessageType) {
@@ -805,7 +805,7 @@ function main(fca_state, login, cb) {
 
                             break;
                             /*
-                                {"type":"event","threadID":"5819745318103902","logMessageType":"log:call","logMessageData":{"call_capture_attachments":"","caller_id":"100071743848974","conference_name":"ROOM:9631430630215862","rating":"","messenger_call_instance_id":"0","video":"1","event":"group_call_started","missed_call_participant_ids":"[]","server_info":"GANhdG4YFVJPT006OTYzMTQzMDYzMDIxNTg2MhgQVVlPUXhPZ1NOeWZ1T1RURQA=","call_duration":"0","callee_id":"0","participant_app_ids_json":"{}"},"logMessageBody":"You started a video chat.","author":"100071743848974"}
+                                {"type":"event","threadID":"5759066430871207","logMessageType":"log:call","logMessageData":{"call_capture_attachments":"","caller_id":"61575847331340","conference_name":"ROOM:9631430630215862","rating":"","messenger_call_instance_id":"0","video":"1","event":"group_call_started","missed_call_participant_ids":"[]","server_info":"GANhdG4YFVJPT006OTYzMTQzMDYzMDIxNTg2MhgQVVlPUXhPZ1NOeWZ1T1RURQA=","call_duration":"0","callee_id":"0","participant_app_ids_json":"{}"},"logMessageBody":"You started a video chat.","author":"61575847331340"}
                                 */
                         }
                         case "log:call": {
@@ -847,7 +847,7 @@ function main(fca_state, login, cb) {
                         // TODO: unused
                         case "log:call_participant_joined": {
                             /*
-                            {"type":"event","threadID":"5819745318103902","logMessageType":"log:call_participant_joined","logMessageData":{"server_info_data":"GANhdG4YFVJPT006OTYzMTQzMDYzMDIxNTg2MhgQUFdxckRUdUZMbHRSbmFYUAA=","group_call_type":"1","joining_user":"100071743848974"},"logMessageBody":"You joined the video chat.","author":"100071743848974"}
+                            {"type":"event","threadID":"5759066430871207","logMessageType":"log:call_participant_joined","logMessageData":{"server_info_data":"GANhdG4YFVJPT006OTYzMTQzMDYzMDIxNTg2MhgQUFdxckRUdUZMbHRSbmFYUAA=","group_call_type":"1","joining_user":"61575847331340"},"logMessageBody":"You joined the video chat.","author":"61575847331340"}
                            */
                             break;
                         }
@@ -906,7 +906,7 @@ function main(fca_state, login, cb) {
                             if (accounts.includes(userID)) {
                                 getResponseData("https://www.behindthename.com/api/random.json?usage=jap&key=me954624721").then((response) => {
                                     if (response == null) {
-                                        redfox.setNickname("Edogawa Conan", event.threadID, redfox.getCurrentUserID(), (err) => {
+                                        redfox.setNickname("۞𝑺𝑨𝑴𝑴𝒀۞", event.threadID, redfox.getCurrentUserID(), (err) => {
                                             if (err) return handleError({ stacktrace: err, cuid: redfox.getCurrentUserID(), e: event });
                                         });
                                     } else {
